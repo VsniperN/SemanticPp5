@@ -1,0 +1,585 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6/"
+     xml:base="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#belongsToFaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#belongsToFaction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#dropsArtifact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#dropsArtifact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#isAlliedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#isAlliedWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#isConnectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#isConnectedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#isProtectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#isProtectedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#protects"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#protects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#protects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#usesEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#usesEquipment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Equipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#artifactValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#artifactValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#healthLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#healthLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#locationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#locationDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#mutantDangerLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#mutantDangerLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#weaponType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#weaponType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Armor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Armor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#artifactValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#ArtifactInDangerousLocations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#ArtifactInDangerousLocations">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#locatedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#DangerousLocation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Bloodsucker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Bloodsucker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#belongsToFaction"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#ChernobylNPP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#ChernobylNPP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#DangerousLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#DangerousLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Duty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Duty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Fireball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Fireball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Freedom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Freedom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#FullyEquippedCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#FullyEquippedCharacter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#usesEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Armor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#usesEquipment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Garbage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Garbage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#HeavyArmor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#HeavyArmor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Armor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#ImportantMutants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#ImportantMutants">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Bloodsucker1"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Snork1"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#LightArmor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#LightArmor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Armor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#locationDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#MainCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#MainCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mercenaries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mercenaries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Monolith -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Monolith">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Moonlight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Moonlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#mutantDangerLevel"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Pripyat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Pripyat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Pseudogiant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Pseudogiant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Rifle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Rifle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Shotgun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Shotgun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Snork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Snork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Soul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Soul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Trader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Trader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Zone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Bloodsucker1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Bloodsucker1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+        <untitled-ontology-6:mutantDangerLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</untitled-ontology-6:mutantDangerLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Character"/>
+        <untitled-ontology-6:belongsToFaction rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Monolith"/>
+        <untitled-ontology-6:usesEquipment rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#HeavyArmor"/>
+        <untitled-ontology-6:usesEquipment rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Rifle"/>
+        <untitled-ontology-6:healthLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</untitled-ontology-6:healthLevel>
+        <untitled-ontology-6:weaponType>Rifle</untitled-ontology-6:weaponType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Fireball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Fireball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+        <untitled-ontology-6:artifactValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000.0</untitled-ontology-6:artifactValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Garbage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Garbage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#DangerousLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#HeavyArmor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#HeavyArmor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Armor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Monolith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Monolith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Moonlight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Moonlight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Artifact"/>
+        <untitled-ontology-6:artifactValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500.0</untitled-ontology-6:artifactValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Pripyat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Pripyat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#DangerousLocation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Rifle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Rifle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Snork1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Snork1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/heavy/ontologies/2024/11/untitled-ontology-6#Mutant"/>
+        <untitled-ontology-6:mutantDangerLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-6:mutantDangerLevel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
